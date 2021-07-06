@@ -1,0 +1,266 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+/* Global CSS */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	color: #2d3950;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #2d3950;
+}
+p{
+	color: #a0a0a0;
+}
+.container{
+	width: 1140px;
+}
+
+/* Header Section */
+header{
+	background:#f6f9f9;
+	padding: 20px 0;
+}
+
+/* Banner Section */
+.banner-section{
+	background:url(../img/banner.png) no-repeat center;
+	padding: 150px 0 50px;
+}
+.banner-section h1{
+	font-size: 90px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+}
+.title-border{
+	border: 1px solid #15a4fa;
+	width: 40%;
+	margin: 10px auto 25px;
+	background: #15a4fa;
+}
+.banner-section p{
+	text-align: center;
+	font-size: 20px;
+	color: #ffffff;
+}
+.btn-banner{
+	color: #ffffff;
+	background: transparent;
+	border: 1px solid #15a4fa;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 15px 35px;
+	display: block;
+	margin:  50px auto 25px;
+	transition: .4s ease-in-out;
+}
+.btn-banner:hover{
+	background-color: #15a4fa;
+	cursor: pointer;
+}
+.fa-angle-down{
+	color: #ffffff;
+	font-size: 38px;
+	display: block;
+	text-align: center;
+	margin-top: 150px;
+}
+
+/* Intro Section */
+.intro-section{
+	background-color: #f6f9f9;
+	padding: 50px 0 30px;
+}
+.intro-section h2{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.intro-section p{
+	text-align: center;
+	font-size: 17px;
+	line-height: 35px;
+}
+
+/* Feature Section */
+.feature{
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+	padding: 20px 0 20px;
+}
+.feature-box{
+	width: 33.3333%;
+	text-align: center;
+	float: left;
+}
+.feature-box h3{
+	padding: 20px 0 17px;
+	font-size: 20px;
+}
+.feature-box p{
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* Portfolio Section */
+.portfolio-section{
+	width: 100%;
+	float: left;
+	background-color: #f6f9f9;
+	padding: 50px 0 20px;
+}
+.section-title{
+	width: 100%;
+	float: left;
+	margin: 10px 0 30px;
+}
+.section-title h2{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.section-title p{
+	font-size: 18px;
+	text-align: center;
+}
+.gallery-port{
+	position: relative;
+	margin: 15px 0;
+}
+.gallery-port img{
+	width: 100%;
+}
+.item-hover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(44,172,247,0);
+	top: 0;
+	left:0;
+	cursor: pointer;
+	transition: .4s ease-in-out;
+}
+.gallery-port:hover .item-hover{
+	background: rgba(44,172,247,0.7);
+}
+.item-hover ul{
+	display: block;
+	text-align: center;
+	margin-top: 28%;
+	opacity: 0;
+	transition: .4s ease-in-out;
+}
+.item-hover ul li{
+	list-style: none;
+	display: inline;
+	text-align: center;
+	margin: 0 5px;
+}
+.item-hover ul li .fa{
+	border: 1px solid #ffffff;
+	padding: 15px;
+	border-radius: 3px;
+	color: #ffffff;
+	font-size: 25px;
+}
+.gallery-port:hover .item-hover ul{
+	opacity: 1;
+}
+
+/* Stay With Us */
+.stay-with-us{
+	background:url(../img/stay-with-us.png) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	float: left;
+	padding: 60px 0;
+}
+.stay-with-us-title{
+	width: 100%;
+	float: left;
+	margin-bottom: 85px;
+}
+.stay-with-us-title h2{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 15px;
+	color: #ffffff;
+}
+.stay-with-us-title p{
+	font-size: 18px;
+	text-align: center;
+}
+.contact-form{
+	width: 40%;
+	margin: 0 auto;
+}
+.form-group{
+	margin: 20px 0;
+	color: #ffffff;
+}
+.form-control{
+	width: 95%;
+	height: 36px;
+	padding: 0 10px;
+	border: 1px solid #999999;
+	background:transparent;
+	color: #ffffff;
+	border-radius: 3px;
+}
+.form-group .text-area{
+	height: 120px;
+	padding: 10px;
+}
+.btn-send{
+	background: transparent;
+    font-size: 18px;
+    padding: 10px 35px;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #15a4fa;
+    margin-left: auto;
+    display: block;
+    transition: 0.4s;
+    margin-top: -25px;
+    margin-right: 20px;
+}
+.btn-send:hover{
+	background:#15a4fa;
+	cursor: pointer;
+}
+
+/* Footer Section */
+footer{
+	background-color: #f6f9f9;
+	padding: 20px 0 0;
+	width: 100%;
+	float:left;
+}
+.footer-left,
+.footer-right{
+	width: 50%;
+	float: left;
+	padding: 8px 0;
+}
+.social-media{
+	text-align: right;
+}
+.social-media ul li{
+	list-style: none;
+	display: inline;
+	margin: 0 5px;
+}
+.social-media ul li .fa{
+	width: 30px;
+	height: 30px;
+	background:#15a4fa;
+	text-align: center;
+	color: #ffffff;
+	line-height: 30px;
+}
