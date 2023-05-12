@@ -29,6 +29,7 @@ header{
 /* Banner Section */
 .banner-section{
 	background:url(../img/banner.png) no-repeat center;
+	width: 100%;
 	padding: 150px 0 50px;
 }
 .banner-section h1{
@@ -263,4 +264,14 @@ footer{
 	text-align: center;
 	color: #ffffff;
 	line-height: 30px;
+}
+
+
+@media (max-width: 575.98px){
+	.banner-section{
+		width: 1135px;
+	}
+	.stay-with-us{
+		width: 1135px;
+	}
 }
